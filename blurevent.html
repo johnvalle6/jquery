@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<title>blurevent</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<body>
+ <form>
+   <input id="field1" type="text" value="Field 1">
+   <input id="field2" type="text" value="Field 2">
+ </form>
+
+
+<script >
+$(document).ready(function(){
+    $("input").blur(function(){
+        alert("This input field has lost its focus.");
+    });
+});
+
+</script>
+</body>
+</html>

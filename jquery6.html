@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+	<title>blurevent</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<body>
+   <form  name='demo_form'>
+  First name: <input type="text" value="123584"><br>
+  Last name: <input type="text" value="123584"><br>
+  <input type="submit" value="Submit">
+  </form>
+<p id="demo"></p>
+
+<script >
+
+$(document).ready(function(){
+    $("input").change(function(){ //change se utiliza para dar una alerta y decir que el documento ha sido cambiado;
+    alert( document.getElementById("demo").innerHTML = "has cambiado el text");
+});
+});
+ 
+</script>
+</body>
+</html>

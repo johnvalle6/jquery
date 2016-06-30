@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+	<title>ejercicio3</title>
+	<style>
+p {
+    margin-top:20px;
+    margin-left: 10px;
+    padding: 5px;
+    border: 2px solid #666;
+    color: red;
+
+  }
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+<div class="contenido-articulo">
+<p>asd</p>
+<p>asd2</p>
+<p>asd3</p>
+</div>
+<script>
+        
+      $( "p" )
+  .on( "mouseenter", function() {
+    $( this ).css({
+      "background-color": "yellow",
+      "font-weight": "bolder"
+    });
+  })
+  .on( "click", function() {
+    var styles = {
+      backgroundColor : "#ddd",
+      fontWeight: ""
+        };
+    $( this ).css( styles );
+  });
+
+
+</script>
+</body>
+</html>
